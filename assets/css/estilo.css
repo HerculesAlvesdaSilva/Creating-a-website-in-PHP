@@ -38,11 +38,36 @@ body {
 
 .principal {
   grid-area: principal;
-  height: calc(100vh - 180px);
+  height: calc(
+    100vh - 180px
+  ); /* Se tirar a altura, toda a área irá se movimentar */
   background-color: #f0f0f0;
   padding: 20px;
 }
+
+.conteudo {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
 .rodape {
   grid-area: rodape;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  padding-right: 20px;
+  color: #444;
+  /*position: sticky; (faz com que o rodapé fique sempre visível */
+  /*bottom: 0px; (é a altura que ficará o rodapé) */
+}
+
+.modulos {
+  display: flex;
+  flex-wrap: wrap;
 }
