@@ -70,4 +70,104 @@ body {
 .modulos {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.modulo {
+  flex-basis: 32%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.modulo > h3 {
+  margin: 0px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  background-color: #1867c0;
+}
+
+.modulo > ul {
+  margin: opx;
+  padding: 10px;
+  list-style: none;
+}
+
+.modulo > ul > li {
+  padding: 7px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.modulo > ul > li > a {
+  display: flex;
+  text-decoration: none;
+  color: #222;
+}
+.modulo > ul > li:hover {
+  background-color: #eee;
+}
+
+.modulo.verde {
+  border: 2px solid #4caf50;
+}
+.modulo.verde > h3 {
+  background-color: #4caf50;
+}
+
+.modulo.vermelho {
+  border: 2px solid #f44336;
+}
+.modulo.vermelho > h3 {
+  background-color: #f44336;
+}
+
+.modulo.lime {
+  border: 2px solid #00ff00;
+}
+.modulo.lime > h3 {
+  background-color: #00ff00;
+}
+
+.modulo.indigo {
+  border: 2px solid #4b0082;
+}
+.modulo.indigo > h3 {
+  background-color: #4b0082;
+}
+
+.modulo.crimson {
+  border: 2px solid #dc143c;
+}
+.modulo.crimson > h3 {
+  background-color: #dc143c;
+}
+
+.modulo.gold {
+  border: 2px solid #ffd700;
+}
+.modulo.gold > h3 {
+  background-color: #ffd700;
+}
+
+.modulo.purple {
+  border: 2px solid #a020f0;
+}
+.modulo.purple > h3 {
+  background-color: #a020f0;
+}
+
+.modulo.maroon {
+  border: 2px solid #800000;
+}
+.modulo.maroon > h3 {
+  background-color: #800000;
+}
+
+.modulo.cyan {
+  border: 2px solid #00ffff;
+}
+.modulo.cyan > h3 {
+  background-color: #00ffff;
 }
