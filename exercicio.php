@@ -7,15 +7,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets\css\estilo.css" />
-    <title>Curso PHP</title>
+    <link rel="stylesheet" href="assets\css\exercicio.css" />
+    <title>Exercício</title>
   </head>
-  <body>
+  <body class="exercicio">
     <header class="cabecalho">
       <h1>Curso PHP</h1>
-      <h2>Índice dos Exercícios</h2>
+      <h2>Visualização do Exercício</h2>
     </header>
+    <nav class="navegacao">
+    <a href="#" classe="verde">Sem formatação</a>
+    <a href="index.php" classe="vermelho">Voltar</a>
+    </nav>
     <main class="principal">
       <div class="conteudo">
+        <?php
+          include("{$_GET['dir']}/{$_GET['file']}.php");   
+        ?>
       </div>  
     </main>
     <footer class="rodape">Aluno © <?= date('Y'); ?></footer>
