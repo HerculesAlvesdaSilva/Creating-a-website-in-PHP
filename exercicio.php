@@ -16,7 +16,8 @@
       <h2>Visualização do Exercício</h2>
     </header>
     <nav class="navegacao">
-    <a href="#" classe="verde">Sem formatação</a>
+    <a href=<?= "{$_GET['dir']}/{$_GET['file']}.php" ?> 
+      classe="verde">Sem formatação</a>
     <a href="index.php" classe="vermelho">Voltar</a>
     </nav>
     <main class="principal">
